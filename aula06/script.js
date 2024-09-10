@@ -1,10 +1,14 @@
-document.getElementsByTagName('h1')[0].innerHTML = "elemento por tag name";
-document.getElementsByTagName('p')[2].innerHTML = "elemento por tag name";
+//queryselector
+document.querySelector('#idQualquerQuatro').innerHTML = "<b>Conteúdo da ID qualquer quatro";
 
-setTimeout(function(){
-
-    document.getElementsByTagName('div')[2].innerText = "Testando a tag name com 3 segundos"
+document.querySelector('#idQualquerSete').innerHTML = "<b>Conteúdo da ID qualquer Sete";
 
 
+document.querySelector('.classeQualquerNove').innerText = "texto comum...";
 
-}, 3000);
+
+//Queryseletorall
+
+document.querySelectorAll('#idQualquer')[1].innerHTML = "QuerySelectorALL";
+
+document.querySelector('.classeQualquer')[0].innerHTML = "Query com classe";
